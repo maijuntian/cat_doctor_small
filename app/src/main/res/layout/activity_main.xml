@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <ImageView
+        android:id="@+id/iv_eyes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/rl_camera"
+        android:layout_width="620px"
+        android:layout_height="620px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145px"
+        android:visibility="gone">
+
+       <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/cv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="准备"
+            android:textColor="#00a2ff"
+            android:textSize="190px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_example"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/face_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>
